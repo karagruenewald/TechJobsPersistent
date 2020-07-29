@@ -11,4 +11,5 @@ WHERE location = "St. Louis";
 --Part 3
 
 SELECT skills.name, skills.description FROM skills
-WHERE id IN (SELECT skillId from jobskills);
+WHERE id IN (SELECT skillId from jobskills)
+ORDER BY name asc;
